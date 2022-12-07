@@ -1,0 +1,28 @@
+<div class="card my-5">
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #sortingForm="ngForm">
+      <div class="form-group">
+        <label for="numbers">Numbers</label>
+        <input type="text" [(ngModel)]="sortingTask.listOfNumbersAsString" 
+          class="form-control" 
+          id="numbers" 
+          name="numbers" 
+          placeholder="Enter your numbers"
+          required #numbers="ngModel">
+      </div>
+      <!-- <div [hidden]="!name.pristine" class="alert alert-danger">Numbers are required</div> -->
+      <div class="form-group">
+        <label for="sortingType">Ascending</label>
+        <input type="text" [(ngModel)]="sortingTask.typeOfSorting" 
+          class="form-control" 
+          id="sortingType" 
+          name="sortingType" 
+          required #sortingType="ngModel">
+        <!-- <div [hidden]="!email.pristine" class="alert alert-danger">Email is required</div> -->
+      </div>
+
+      <button type="submit" 
+        class="btn btn-info">Submit</button>
+    </form>
+  </div>
+</div>

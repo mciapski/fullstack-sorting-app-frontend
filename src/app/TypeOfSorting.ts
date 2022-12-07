@@ -1,0 +1,4 @@
+enum TypeOfSorting{
+    ASC,
+    DESC
+}
