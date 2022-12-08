@@ -13,7 +13,7 @@ export class SortingFormComponent {
 
   sortingTask: SortingTask;
 
-  test: string;
+  
 
   constructor(private route: ActivatedRoute,
     private router: Router,
